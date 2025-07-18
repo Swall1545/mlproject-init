@@ -1,4 +1,4 @@
-#S. Wallace
+# S. Wallace
 # setup.py
 
 from setuptools import setup
@@ -15,4 +15,11 @@ setup(
             # When user runs 'mlproject-init' call init_project_cli func. from mlproject_init
         ],
     },
+    author="S. Wallace",
+    description="CLI tool to scaffold reproducible machine learning project structures",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.7',
 )
