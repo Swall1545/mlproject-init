@@ -10,7 +10,7 @@ README_TEMPLATE = """# {project_name} - Machine Learning Project
 
 This project follows a modular, reproducible ML pipeline structure.
 
-## \ud83d\udcc1 Project Structure
+## Project Structure
 
 ```
 {project_name}/
@@ -62,6 +62,17 @@ Or, if using Conda:
 conda create -n myenv --file requirements.txt
 conda activate myenv
 ```
+"""
+ENV_TEMPLATE = """# Secrets and access
+API_KEY=your_api_key_here
+
+# Project configuration
+MODEL_TYPE=xgboost
+ENVIRONMENT=dev
+DEBUG=True
+USE_GPU=False
+EXPERIMENT_NAME={project_name}
+LOG_LEVEL=INFO
 """
 
 # Folders to be created in the project
